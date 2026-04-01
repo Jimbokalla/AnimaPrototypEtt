@@ -6,6 +6,7 @@ public class Board {
     private Scanner input;
     private Card card;
 
+    // Skapar själva brädet samt placerar ut X för att symbolisera tomma platser.
     public Board(){
         board = new String[2][4];
         for(int k = 0; k < board.length; k++){
@@ -17,6 +18,7 @@ public class Board {
         this.card = new Card();
     }
 
+    // Går igenom och printar hela brädet
     public void showBoard(){
         for(int k = 0; k < board.length; k++){
             for(int r = 0;r < board[k].length; r++){
